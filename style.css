@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(218, 22%, 67%);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.hero {
+  padding: 35px;
+  background-color: #f4f4f4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.hero .heading {
+  color: hsl(179, 62%, 43%);
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero .offer {
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+}
+
+.hero .details {
+  line-height: 1.6;
+  color: #333;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.grid-1 {
+  padding: 35px;
+  padding-bottom: 25px;
+  background-color: hsl(179, 62%, 43%);
+  color: #f4f4f4;
+  border-bottom-left-radius: 10px;
+}
+.grid-1 .subscription {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.grid-1 .cost {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.grid-1 .cost .price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.grid-1 .cost .month {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.grid-1 .offer {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline;
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  text-align: center;
+  color: #f4f4f4;
+  padding: 11px;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  opacity: 0.9;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+:active.btn {
+  transform: translateY(0);
+}
+
+.grid-2 {
+  padding: 35px;
+  padding-bottom: 25px;
+  background-color: hsl(179, 44%, 51%);
+  color: #f4f4f4;
+  border-bottom-right-radius: 10px;
+}
+.grid-2 .whyus {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.grid-2 .list {
+  font-size: 14px;
+  opacity: 0.95;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+footer {
+  font-size: 12px;
+  color: #333;
+}
+
+footer a {
+  border-bottom: 1px dotted blue;
+  color: blue;
+}
+
+@media screen and (max-width: 475px) {
+  .grids {
+    grid-template-columns: 1fr;
+  }
+}
